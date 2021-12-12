@@ -1,0 +1,31 @@
+<div class="container-fluid">
+
+<div class="card bg-dark text-white">
+    <img src="../../assets/harry.jpg" class="card-img" alt="card-harry" height="436">
+    <div class="card-img-overlay">
+      <h2 class="card-title text-warning text-bold"><br><br><br>  Personajes Memorables De Harry Potter</h2>
+      <p class="card-text "><br></p>
+      <h4 class="card-text text-light text-bold">Recuerda a los mejores personajes de la saga Harry Potter.</h4>
+      <h4 class="card-text text-light text-bold">Sí conoces alguno más ¡Agregalo!</h4>
+    </div>
+  </div>
+</div>
+
+<div class="container marketing ">
+    <div class="row" >
+      <div class="col-lg-4" *ngFor="let goal of goals; let i = index">
+        <p><br>                 </p>
+        <div class="bg-dark">
+        <img class="card-img-top" src="../../assets/{{goal.imagen}}" alt="foto" width="140" height="380" >
+        <h5 class="card-title text-center">{{goal.name}}</h5>
+      <p class="card-text text-center">Casa: {{goal.email}}</p>
+      <p class="card-text text-center">{{goal.comments}}</p>
+      <p class="card-text text-center">Edad: {{goal.age}}</p>
+    </div>
+
+      </div><!-- /.col-lg-4 --> 
+
+    </div><!-- /.row -->
+</div>
+
+

@@ -1,0 +1,31 @@
+<div class="text-center">
+    <div class="form-signin"> 
+        <div class="col">
+            <form >
+                <img class="mb-4" src="../../assets/logo.png" alt="" width="300" height="140">
+                <h1 class="h3 mb-3 fw-normal">Agrega un nuevo personaje </h1>
+                <div class="form-floating">
+                    <input type="text" class="form-control" name= "item1" placeholder="life goal" [(ngModel)]="nombre">
+                    <label for="item1">Nombre</label>
+                </div>
+
+                <div class="form-floating">
+                    <input type="text" class="form-control" name= "item2" placeholder="life goal" [(ngModel)]="casa">
+                    <label for="item2">Casa</label>
+                </div>
+
+                <div class="form-floating">
+                    <input type="text" class="form-control" name= "item3" placeholder="life goal" [(ngModel)]="tipo">
+                    <label for="item3">Tipo</label>
+                </div>
+
+                <div class="form-floating">
+                    <input type="text" class="form-control" name= "item4" placeholder="life goal" [(ngModel)]="edad">
+                    <label for="item4">Edad</label>
+                </div>
+
+                <input type="submit" class="btn btn-warning" value="Guardar" (click)="AgregarMeta()" >
+            </form>
+        </div>
+    </div>
+</div>
